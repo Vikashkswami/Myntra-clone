@@ -64,4 +64,12 @@
     .inner-second{
         gap: 8px;
     }
+
+    .container{
+        justify-content: space-between;
+    }
+
+    .outer-first{
+        padding: 0px 10px;
+    }
 }
