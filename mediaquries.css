@@ -27,4 +27,17 @@
         padding: 15px 0px 30px 22px;
         color: #3e4152;
     }
+
+    .description-inner-box{
+        flex-direction: column;
+    }
+    .box-first > .box-inside > .links{
+        display: none;
+    }
+    .box-second > .links{
+        display: none;
+    }
+    .downlod-img{
+        display: none;
+    }
 }
