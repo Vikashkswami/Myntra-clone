@@ -10,12 +10,11 @@
 }
 
 .container {
-
     height: 80px;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-   /* justify-content: space-between;
+    /* justify-content: space-between;
      margin-top: 0px;
     margin-left: 45px;
     margin-bottom: 0px;
@@ -43,6 +42,13 @@
     height: auto;
 }
 
+#menu-btn{
+    display: none;
+}
+
+#add-to{
+    display: none;
+}
 ul {
     /* width: 100%; */
     height: 100%;
@@ -51,8 +57,6 @@ ul {
     list-style-type: none;
     font-size: 13px;
     align-items: flex-end;
-
-
 }
 
 .inner-first>ul>li {
@@ -229,7 +233,7 @@ img[alt="actors"] {
     color: #282c3f;
 }
 
-#bag{
+#bag {
     position: relative;
     left: 1px;
 }
@@ -247,8 +251,6 @@ img[alt="actors"] {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
-
 }
 
 .profile-first {
@@ -256,7 +258,6 @@ img[alt="actors"] {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
 
 .profile-first h3 {
@@ -276,11 +277,11 @@ img[alt="actors"] {
     border-color: #3e4152;
 }
 
+
 .profile-first button:hover {
     cursor: pointer;
     border-color: #ff3c6f;
 }
-
 
 .profile-first button {
     padding: 8px 16px;
@@ -293,13 +294,10 @@ img[alt="actors"] {
     gap: 7px;
 }
 
-
 .profile-second a {
     text-decoration: none;
     font-size: 13px;
     color: #3e4152;
-
-
 }
 
 .profile-third {
@@ -322,7 +320,7 @@ img[alt="actors"] {
     font-weight: bolder;
 }
 
-.profile-second p{
+.profile-second p {
     color: white;
     background-color: #ff3c6f;
     padding: 1px 6px 3px 6px;
@@ -330,7 +328,7 @@ img[alt="actors"] {
 
 }
 
-#new{
+#new {
     display: inline-flex;
     transform: skew(-15deg);
 }
@@ -344,6 +342,8 @@ img[alt="actors"] {
 .pro {
     border-bottom: 3px solid #ff3c6f;
 }
+
+
 
 .search-box>input {
     width: 400px;
@@ -362,7 +362,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 }
 
-#search-icon{
+#search-icon {
     position: absolute;
     top: 40%;
     margin-left: 13px;
@@ -1279,21 +1279,22 @@ p {
 
 }
 
-.bell-icon i{
+.bell-icon i {
     animation: bell 500ms linear infinite alternate-reverse;
     transform-origin: top;
 }
 
-@keyframes bell{
+@keyframes bell {
 
-    0%{
+    0% {
         transform: rotate(-20deg);
     }
-    
-    100%{
+
+    100% {
         transform: rotate(20deg);
     }
 }
+
 /* outer thirty four */
 
 
