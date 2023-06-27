@@ -396,7 +396,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .inner-box>a>img {
-    width: 340px;
+    /* width: 340px; */
+    width: 100%;
     /* height: auto; */
 
 }
@@ -428,7 +429,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .deal-of-the-day img {
-    width: 168px;
+    /* width: 168px; */
+    width: 100%;
 
 }
 
@@ -446,7 +448,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .best-of-myntra img {
-    width: 164px;
+    /* width: 164px; */
+    width: 100%;
     display: flex;
 
 }
