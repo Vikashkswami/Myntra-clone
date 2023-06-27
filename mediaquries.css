@@ -28,6 +28,9 @@
         color: #3e4152;
     }
 
+    .description-outer-box{
+        padding: 0px 15px 0px 10px;
+    }
     .description-inner-box{
         flex-direction: column;
     }
