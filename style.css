@@ -443,8 +443,6 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 100%;
     height: auto;
 
-
-
 }
 
 .best-of-myntra img {
@@ -470,10 +468,13 @@ input[type="search"]::-webkit-search-cancel-button {
     /* border: 2px solid black; */
     width: 100%;
     height: auto;
+    display: flex;
 }
 
 .top-picks img {
-    width: 188px;
+    /* width: 188px; */
+    width: 100%;
+
 }
 
 /* outer seventh */
