@@ -43,4 +43,25 @@
     .downlod-img{
         display: none;
     }
+
+    .shopping-logo > p {
+        display: none;
+    }
+
+    .shopping-logo{
+        height: 58%;
+    }
+
+    #search-icon{
+        position: static;
+        margin-left: 0px;
+    }
+
+    .shopping-move{
+        gap: 10px;
+    }
+
+    .inner-second{
+        gap: 8px;
+    }
 }
