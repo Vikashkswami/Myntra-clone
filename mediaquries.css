@@ -2,10 +2,31 @@
 
 @media screen and (min-width: 0px) and (max-width:480px) {
 
-    .list {
+    
+    /* .list {
         display: none;
+    } */
+
+    .list{
+        background-color: green;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        overflow: auto;
+        position: absolute;
+        left: 0%;
+        width: 200px;
+        height: 100vh;
+        top: 0;
     }
 
+    .list2{
+        display: none;
+    }
+    
+    #studio{
+        display: none;
+    }
     input[type="search"] {
         display: none;
     }
@@ -72,4 +93,7 @@
     .outer-first{
         padding: 0px 10px;
     }
+
+    
+ 
 }

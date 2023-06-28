@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 .flex {
@@ -10,6 +10,7 @@
 }
 
 .container {
+    /* border: 2px solid red; */
     height: 80px;
     display: flex;
     justify-content: space-evenly;
@@ -37,6 +38,9 @@
     /* width: 50%; */
     gap: 25px;
 }
+
+
+
 
 .img-logo>img {
     width: 60px;
@@ -253,6 +257,7 @@ img[alt="actors"] {
     flex-direction: column;
     justify-content: space-around;
 }
+
 
 .profile-first {
     /* border: 2px solid red; */
