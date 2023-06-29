@@ -15,13 +15,13 @@
 </head>
 
 <body>
-
     <!-- outer-first -->
     <div class="outer-first">
         <div class="container">
             <div class="inner-first flex">
-             <i class="fa-solid fa-bars" id="menu-btn"></i>   <div class="innerbox img-logo"><img src="assets (2)/myntra2.png" alt="myntra-logo"></div>
-                <ul class="list list2" id="listid">
+                <i class="fa-solid fa-bars" id="menu-btn"></i>
+                <div class="innerbox img-logo"><img src="assets (2)/myntra2.png" alt="myntra-logo"></div>
+                <ul class="list" id="listid">
                     <li id="man">MEN</li>
                     <li id="woman">WOMEN</li>
                     <li id="kid">KIDS</li>
@@ -491,12 +491,12 @@
 
             </div>
 
-           
+
 
             <div class="inner-second flex">
                 <i class="fa-regular fa-square-plus" id="add-to"></i>
                 <div class="search-box">
-                      <i class="fa-solid fa-magnifying-glass " id="search-icon"></i> <input type="search"
+                    <i class="fa-solid fa-magnifying-glass " id="search-icon"></i> <input type="search"
                         placeholder="Search for products,brands and more" id="input-first" onfocus="foucusfunction()"
                         onblur="blurfunction()">
                 </div>
@@ -528,7 +528,7 @@
                             <a href="#">Saved Addresses</a>
                         </div>
                     </div>
-                     <div class="shopping-logo flex"><i class="fa-regular fa-heart "></i>
+                    <div class="shopping-logo flex"><i class="fa-regular fa-heart "></i>
                         <p>Wishlist</p>
                     </div>
                     <div class="shopping-logo flex"><i class="fa-solid fa-bag-shopping" id="bag"></i>
@@ -539,6 +539,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- outer second -->
     <div class="outer-second flex">
         <div class="inner-box">
@@ -1405,48 +1407,48 @@
 
     <!-- <div class="Example"> -->
 
-        <div class="flat-off" id="flat">
-            <h2>FLAT ₹500 OFF</h2>
-            <i class="fa-solid fa-caret-left fa-rotate-90 fa-2xl" id="icon-f"></i>
-            <i class="fa-solid fa-caret-left fa-rotate-270 fa-2xl" id="icon-s"></i>
+    <div class="flat-off" id="flat">
+        <h2>FLAT ₹500 OFF</h2>
+        <i class="fa-solid fa-caret-left fa-rotate-90 fa-2xl" id="icon-f"></i>
+        <i class="fa-solid fa-caret-left fa-rotate-270 fa-2xl" id="icon-s"></i>
+    </div>
+    <div class="flat-description" id="flat-des">
+        <div class="flat-des-box-first">
+            <div class="inner-flat-box">
+                <p>Avail Flat</p>
+                <h1>₹500 OFF</h1>
+                <h2>+ FREE SHIPPING</h2>
+            </div>
+            <img src="assets (2)/500off.webp" alt="5000ff">
         </div>
-        <div class="flat-description" id="flat-des">
-            <div class="flat-des-box-first">
-                <div class="inner-flat-box">
-                    <p>Avail Flat</p>
-                    <h1>₹500 OFF</h1>
-                    <h2>+ FREE SHIPPING</h2>
+        <div class="flat-des-box-second">
+            <div class="second-one">
+                <div class="second-head">
+                    <h4>Coupon Code:</h4>
+                    <h3>MYNTRA500</h3>
                 </div>
-                <img src="assets (2)/500off.webp" alt="5000ff">
+                <p>Applicable on your first order</p>
             </div>
-            <div class="flat-des-box-second">
-                <div class="second-one">
-                    <div class="second-head">
-                        <h4>Coupon Code:</h4>
-                        <h3>MYNTRA500</h3>
-                    </div>
-                    <p>Applicable on your first order</p>
-                </div>
-                <div class="second-two">
-                    <button>SIGN UP NOW ></button>
-                </div>
-            </div>
-            <div class="flat-des-box-third">
-                <div class="small-box">
-                    <img src="assets (2)/logo-1.svg" alt="">
-                    <h5>Genuine Products</h5>
-                </div>
-                <div class="small-box">
-                    <img src="assets (2)/logo-2.svg" alt="">
-                    <h5>Try & Buy</h5>
-                </div>
-                <div class="small-box">
-                    <img src="assets (2)/logo-3.svg" alt="">
-                    <h5>Easy Exchanges & Returns</h5>
-                </div>
+            <div class="second-two">
+                <button>SIGN UP NOW ></button>
             </div>
         </div>
-    
+        <div class="flat-des-box-third">
+            <div class="small-box">
+                <img src="assets (2)/logo-1.svg" alt="">
+                <h5>Genuine Products</h5>
+            </div>
+            <div class="small-box">
+                <img src="assets (2)/logo-2.svg" alt="">
+                <h5>Try & Buy</h5>
+            </div>
+            <div class="small-box">
+                <img src="assets (2)/logo-3.svg" alt="">
+                <h5>Easy Exchanges & Returns</h5>
+            </div>
+        </div>
+    </div>
+
     <!-- </div> -->
     </div>
 
@@ -1463,7 +1465,42 @@
             document.getElementById('input-first').style.borderRadius = "3px";
         }
 
+        function blurfunction() {
+            document.getElementById('input-first').style.backgroundColor = "#f5f5f6";
+            document.getElementById('input-first').style.outline = "";
+            document.getElementById('input-first').style.borderRadius = "3px";
+
+        }
+        
+
         //sidebar
+
+        
+        document.onclick = hidemenu;
+
+        function hidemenu(){
+            document.getElementById('listid').classList.remove('list3');
+            document.getElementById('listid').classList.add('list2');
+
+        }
+
+        // document.getElementById('menu-btn').addEventListener("click", showsidebar);
+
+        // function showsidebar() {
+        //     document.getElementById('menu-btn').classList.add('list');
+        // }
+
+        // document.onclick = showsidebar;
+
+        // function showsidebar() {
+        //     document.getElementById('menu-btn').classList.remove('list');
+        // }
+
+        // document.getElementById('menu-btn').addEventListener("blur", showsidebar);
+
+        // function showsidebar() {
+        //     document.getElementById('menu-btn').classList.remove('list');
+        // }
 
         $(document).ready(function () {
 

@@ -2,28 +2,30 @@
 
 @media screen and (min-width: 0px) and (max-width:480px) {
 
-    
-    /* .list {
-        display: none;
-    } */
-
     .list{
-        background-color: green;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
-        overflow: auto;
+        border: 2px solid black;
+        background-color: greenyellow;
         position: absolute;
+        top: 0%;
         left: 0%;
-        width: 200px;
         height: 100vh;
-        top: 0;
+        
+        
     }
-
+    
     .list2{
         display: none;
     }
-    
+
+    .list3{
+        display: block;
+    }
+    .inner-first>ul>li{
+        height: auto;
+    }
+
     #studio{
         display: none;
     }
