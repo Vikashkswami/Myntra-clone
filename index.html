@@ -21,7 +21,7 @@
             <div class="inner-first flex">
                 <i class="fa-solid fa-bars" id="menu-btn"></i>
                 <div class="innerbox img-logo"><img src="assets (2)/myntra2.png" alt="myntra-logo"></div>
-                <ul class="list" id="listid">
+                <ul class="list list2" id="listid">
                     <li id="man">MEN</li>
                     <li id="woman">WOMEN</li>
                     <li id="kid">KIDS</li>
@@ -1475,37 +1475,22 @@
 
         //sidebar
 
-        
-        document.onclick = hidemenu;
+       let button = document.getElementById('menu-btn');
+       let sidebar = document.getElementById('listid')
 
-        function hidemenu(){
-            document.getElementById('listid').classList.remove('list3');
-            document.getElementById('listid').classList.add('list2');
 
+       button.onclick = function(){
+        sidebar.classList.toggle('list2');
+       }
+
+       document.onclick = function(e){
+        if(!button.contains(e.target) && !sidebar.contains(e.target)){
+            sidebar.classList.toggle('list2'); 
         }
-
-        // document.getElementById('menu-btn').addEventListener("click", showsidebar);
-
-        // function showsidebar() {
-        //     document.getElementById('menu-btn').classList.add('list');
-        // }
-
-        // document.onclick = showsidebar;
-
-        // function showsidebar() {
-        //     document.getElementById('menu-btn').classList.remove('list');
-        // }
-
-        // document.getElementById('menu-btn').addEventListener("blur", showsidebar);
-
-        // function showsidebar() {
-        //     document.getElementById('menu-btn').classList.remove('list');
-        // }
-
+       }
         $(document).ready(function () {
 
             // profile logo
-
             $('.profile').hide();
             $('#pro').hover(function () {
                 $('#pro').toggleClass('pro');
@@ -1622,7 +1607,6 @@
                 });
             });
 
-
             // Flat-off
             $('.flat-description').hide();
             $('#icon-s').hide();
@@ -1634,10 +1618,10 @@
                 $('#icon-f').toggleClass('fa-rotate-270');
             });
 
-            $('#menu-btn').click(function(){
-                $('.list2').show();
-            });
 
+            // sidebar 
+            
+            
         });
 
     </script>
